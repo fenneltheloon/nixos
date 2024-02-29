@@ -40,7 +40,7 @@
     # Internet things
     firefox
     discord
-    betterdiscord-installer
+    betterdiscordctl
     spotify
   ];
 
