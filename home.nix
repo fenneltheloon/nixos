@@ -35,6 +35,7 @@
 
     # Dev stuff
     gcc
+    fastfetch
     ghidra-bin
     racket-minimal
 
@@ -139,18 +140,18 @@
     '';
   };
 
-  programs.hyfetch = {
-    enable = true;
-    settings = {
-      preset = "nonbinary";
-      mode = "rgb";
-      light_dark = "dark";
-      lightness = 0.5;
-      color_align = {
-        mode = "horizontal";
-      };
-    };
-  };
+#  programs.hyfetch = {
+#    enable = true;
+#    settings = {
+#      preset = "nonbinary";
+#      mode = "rgb";
+#      light_dark = "dark";
+#      lightness = 0.5;
+#      color_align = {
+#        mode = "horizontal";
+#      };
+#    };
+#  };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
