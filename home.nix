@@ -36,6 +36,7 @@
     # Dev stuff
     gcc
     ghidra-bin
+    racket-minimal
 
     # Internet things
     firefox
