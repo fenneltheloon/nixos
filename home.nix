@@ -28,11 +28,12 @@
   # environment.
   home.packages = with pkgs; [
     # Sway support
-    grim
-    slurp
+    sway-contrib.grimshot
     wl-clipboard
     mako
     autotiling
+    pamixer
+    pavucontrol
 
     # Dev stuff
     gcc
@@ -59,9 +60,13 @@
       in lib.mkOptionDefault {
 	"${mod}+x" = "kill";
 	"${mod}+space" = menu;
-	"XF86AudioRaiseVolume" = "exec 'pactl set-sink-volume @DEFAULT_SINK@ +1%'";
-	"XF86AudioLowerVolume" = "exec 'pactl set-sink-volume @DEFAULT_SINK@ -1%'";
-	"XF86AudioMute" = "exec 'pactl set-sink-mute @DEFAULT_SINK@ toggle'";
+	"${mod}+p" = "exec grimshot savecopy active";
+	"${mod}+shift+p" = "exec grimshot savecopy area";
+	"${mod}+Mod1+p" = "exec grimshot savecopy output";
+	"${mod}+ctrl+p" = "exec grimshot savecopy window";
+	"XF86AudioRaiseVolume" = "exec pamixer -i 5";
+	"XF86AudioLowerVolume" = "exec pamixer -d 5";
+	"XF86AudioMute" = "exec pamixer -t";
       };
       modifier = "Mod4";
       startup = [
