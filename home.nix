@@ -38,6 +38,7 @@
     # Dev stuff
     gcc
     ripgrep
+    rustup
     fastfetch
     ghidra-bin
     racket-minimal
