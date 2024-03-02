@@ -37,6 +37,7 @@
 
     # Dev stuff
     gcc
+    ripgrep
     fastfetch
     ghidra-bin
     racket-minimal
