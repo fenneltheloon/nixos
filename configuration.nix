@@ -12,13 +12,6 @@
       inputs.home-manager.nixosModules.default
     ];
 
-
-  # Enable opengl
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
-  };
-
   # Use the systemd-boot EFI boot loader.
   # boot.loader.systemd-boot.enable = true;
   boot.loader = {

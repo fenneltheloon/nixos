@@ -18,6 +18,7 @@
   home.shellAliases = {
     g = "lazygit";
     cd = "z";
+    rebuild = "sudo nixos-rebuild switch --upgrade --flake ~/nixos#default";
   };
   
   # Enable unfree packages
