@@ -39,6 +39,7 @@
     gcc
     ripgrep
     rustup
+    rust-analyzer
     fastfetch
     ghidra-bin
     racket-minimal
