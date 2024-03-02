@@ -123,6 +123,8 @@ vim.cmd([[
   filetype on
   syntax on
 ]])
+-- c support ------------------------------------------------------------------
+require('lspconfig').clangd.setup({})
 -- racket support -------------------------------------------------------------
 require 'lspconfig'.racket_langserver.setup {}
 -- barbar keymaps -------------------------------------------------------------
